@@ -1,6 +1,6 @@
 const express = require('express')
-const authenticateToken = require('../middleWares/authenticateToken')
-const User = require('../models/User')
+const authenticateToken = require('../../middleWares/authenticateToken')
+const User = require('../../models/User')
 require("dotenv/config")
 const router = express.Router()
 
