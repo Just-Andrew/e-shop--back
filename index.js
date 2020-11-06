@@ -21,7 +21,7 @@ app.use("/watch", watchRouter)
 
 async function start() {
     /* Connection to MongoDB */
-    const port = 4000
+    const port = process.env.PORT || 4000
     try {
         await mongoose.connect(
             process.env.DB_connection,
